@@ -1,0 +1,175 @@
+/*
+COLORS
+Light Grey - #d7d7d7
+Medium Grey - #b7b7b7
+Dark Grey - #494b4f
+Yellow - #ffff00
+Red - #ff0000
+Blue - #0692c1
+*/
+
+/*MAIN CONTAINER*/
+
+.container {
+	width: 100%;
+	max-width: 1000px;
+	margin: 10px auto 0 auto;
+	padding: 0 5%;
+}
+body {
+	font-family: Arial, Helvetica, sans serif;
+	background: none;
+}
+p {
+	font-size: 1em;
+	color: #000;
+}
+h1 {
+	font-size: 18px;
+	font-weight: bold;
+}
+h2 {
+  font-size: 27px;
+  font-family: "Arial Black";
+  color: #ff0000;
+  text-shadow: 1px 1.732px 2px rgb( 0, 0, 0 );
+ }
+h3  {
+	color: #494b4f;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+/*STEP CONTAINERS*/
+
+.step1 p {
+	float: left;
+}
+#every {
+	margin-left: 110px;
+}
+#dropdownsContainer {
+	float: left;
+	margin-left: 10px;
+}
+.step3 ol {
+	margin-left: 0px;
+	padding-left: 22px;
+}
+.calculate-update_btns {
+	margin-top: 18px;
+}
+#calculateBtn a {
+	float: right;
+}
+#updateCartBtn a {
+  	float: right;
+  	padding-left: 10px;
+}
+#tableKey {
+	clear: both;
+	margin-top: 50px;
+	font-size: .85em;
+	color: #494b4f;
+	text-align: right;
+}
+.Highlight_key {
+	display: inline-block;
+	background-color: rgb( 255, 255, 0 );
+	box-shadow: 1px 1.732px 2px 0px rgb( 0, 0, 0 );
+	width: 32px;
+	height: 11px;
+	margin-right: 5px;
+}
+.table {
+	display: block;
+	height: 300px;
+	overflow-y: auto;
+	-ms-overflow-y: hidden;
+	-ms-overflow-y: scroll;
+	float: left;
+	margin-top: 10px;
+}
+th.brandCol {
+	width: 60px;
+}
+th {
+	font-size: .9em;
+}
+td {
+	font-size: .8em;
+	text-align: center;
+}
+tfoot {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+#catalogTable {
+	margin: 70px -130px 0 0;
+	height: 300px;
+	overflow-y: auto;
+	-ms-overflow-y: hidden;
+	-ms-overflow-y: scroll;
+	float: left;
+}
+
+/*RIGHT SIDE*/
+
+.rightHalf {
+	background-color: #D8D8D8;
+}
+hr {
+	border-top: 1px solid #b7b7b7;
+}
+.shoppingCart {
+	float: left;
+	margin: 13px 0 0 15px;
+}
+.filled_Open{
+  background-color: #bdbdbd;
+  padding: 7px;
+}
+
+/*CHECK OUT & CANCEL BUTTONS*/
+
+#checkOutBtn a {
+  	float: right;
+}
+#cancelBtn a {
+  	float: right;
+  	padding-left: 10px;
+}
+
+/*VISUAL CASE BUILDER*/
+
+.visualCaseBuilder>h3 {
+	padding-top: 30px;
+	margin-left: 17px;
+}
+#caseBuilderBG {
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+}
+#caseBuilderKey {
+	margin-left: 36px;
+}
+table#caseTable {
+	width: 79%;
+	margin: 0 auto;
+	border-radius: 5px;
+	border: 1px solid #bdbdbd;
+}
+table#caseTable td {
+	padding: 2px;
+}
+#openFill-Content {
+	margin-top: -128px;
+}
+
+
+ /*BORDER TO SEE PLACEMENT*/
+
+ .leftHalf, .rightHalf {
+  	border: 0px solid green;
+ }

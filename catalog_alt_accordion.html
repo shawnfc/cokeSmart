@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+
+	<title>Catalog Alt Accordion</title>
+	
+	<script src="js/respond.min.js"></script>
+	<script src="js/underscore-min.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	<link href="css/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+
+	</head>
+
+	<body>
+		<div class="container">
+			
+			<div class="row left-rightContainer">
+				<div class="col-xs-8 leftHalf">
+					<div class="row mainHeader">
+						<h1>Product Catalog</h1>
+					</div><!-- mainHeader -->
+					
+					<div class="panel-group" id="accordion">
+						<div class="row step1">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h2 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+											Step 1
+										</a>
+									</h2>
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<ol>
+											<li>Please enter a quantity for the products you would like to order.</li>
+											<li>Click ‘UPDATE CART’ to view new quantities in ‘Visual Case Builder’.<div id="updateCartBtn"><a href="#"><img src="img/update_cart_light-grey_btn.jpg"></a></div></li>
+										</ol>
+										
+									</div>
+								</div>
+							</div>
+						</div><!-- step1 -->
+</div>
+						<!--TABLE SECTION-->
+
+				<div class="row calculate-update_btns">
+					
+
+					<p id="tableKeyCatalog"><span class="Highlight_key"></span>= Quantities auto-increased to make full case.</p>
+				</div>
+				
+				<div class="wrapper tableWrapper">
+					<table class="table table-bordered table-condensed">
+						<thead>
+							<tr>
+								
+								<th scope="col" width="80" style="text-align:left">PRODUCT</th>
+								<th scope="col" width="65">TYPE</th>
+								<th scope="col" width="65">QUANTITY</th>
+							</tr>
+						</thead>
+						<!-- TABLE FOOTER -->
+						<tfoot>
+							<tr>
+								
+								<td style="text-align:left">TOTALS</td>
+								<td></td>
+								<td><input type="text" size="1"></td>
+							</tr>
+						</tfoot>
+						<tbody>
+							<tr>
+								
+								<td style="text-align:left" title="COCA-COLA MD 46OZ (1.36L)"><img src="img/brand_images/small/Sprite_Cherry.jpg" style="vertical-align:middle"> COCA-COLA MD 46OZ (1.36L)</td>
+								<td style="text-align:center" id="tip" title="DBL Cartridge = 2 Slots. 
+								SNGL Cartridge = 1 Slot.">DBL Cartridge</td>
+								<td><input type="text" size="1"></td>
+							</tr>
+							<tr>
+							
+								<td style="text-align:left" title="COCA-COLA MD 46OZ (1.36L)"><img src="img/brand_images/small/Sprite_Cherry.jpg" style="vertical-align:middle"> COCA-COLA MD 46OZ (1.36L)</td>
+								<td style="text-align:center" id="tip" title="DBL Cartridge = 2 Slots. 
+								SNGL Cartridge = 1 Slot.">DBL Cartridge</td>
+								<td><input type="text" size="1"></td>
+							</tr>
+							<tr>
+								
+								<td style="text-align:left" title="COCA-COLA MD 46OZ (1.36L)"><img src="img/brand_images/small/Sprite_Cherry.jpg" style="vertical-align:middle"> COCA-COLA MD 46OZ (1.36L)</td>
+								<td style="text-align:center" id="tip" title="DBL Cartridge = 2 Slots. 
+								SNGL Cartridge = 1 Slot.">DBL Cartridge</td>
+								<td><input type="text" size="1"></td>
+							</tr>
+							<tr>
+								
+								<td style="text-align:left" title="COCA-COLA MD 46OZ (1.36L)"><img src="img/brand_images/small/Sprite_Cherry.jpg" style="vertical-align:middle"> COCA-COLA MD 46OZ (1.36L)</td>
+								<td style="text-align:center" id="tip" title="DBL Cartridge = 2 Slots. 
+								SNGL Cartridge = 1 Slot.">DBL Cartridge</td>
+								<td><input type="text" size="1"></td>
+							</tr>
+							<tr>
+								
+								<td style="text-align:left" title="COCA-COLA MD 46OZ (1.36L)"><img src="img/brand_images/small/Sprite_Cherry.jpg" style="vertical-align:middle"> COCA-COLA MD 46OZ (1.36L)</td>
+								<td style="text-align:center" id="tip" title="DBL Cartridge = 2 Slots. 
+								SNGL Cartridge = 1 Slot.">DBL Cartridge</td>
+								<td><input type="text" size="1"></td>
+							</tr>
+							<tr>
+								
+								<td style="text-align:left" title="COCA-COLA MD 46OZ (1.36L)"><img src="img/brand_images/small/Sprite_Cherry.jpg" style="vertical-align:middle"> COCA-COLA MD 46OZ (1.36L)</td>
+								<td style="text-align:center" id="tip" title="DBL Cartridge = 2 Slots. 
+								SNGL Cartridge = 1 Slot.">DBL Cartridge</td>
+								<td><input type="text" size="1"></td>
+							</tr>
+							<tr>
+								
+								<td style="text-align:left" title="COCA-COLA MD 46OZ (1.36L)"><img src="img/brand_images/small/Sprite_Cherry.jpg" style="vertical-align:middle"> COCA-COLA MD 46OZ (1.36L)</td>
+								<td style="text-align:center" id="tip" title="DBL Cartridge = 2 Slots. 
+								SNGL Cartridge = 1 Slot.">DBL Cartridge</td>
+								<td><input type="text" size="1"></td>
+							</tr>
+							<tr>
+								
+								<td style="text-align:left" title="COCA-COLA MD 46OZ (1.36L)"><img src="img/brand_images/small/Sprite_Cherry.jpg" style="vertical-align:middle"> COCA-COLA MD 46OZ (1.36L)</td>
+								<td style="text-align:center" id="tip" title="DBL Cartridge = 2 Slots. 
+								SNGL Cartridge = 1 Slot.">DBL Cartridge</td>
+								<td><input type="text" size="1"></td>
+							</tr>
+							<tr>
+								
+								<td style="text-align:left" title="COCA-COLA MD 46OZ (1.36L)"><img src="img/brand_images/small/Sprite_Cherry.jpg" style="vertical-align:middle"> COCA-COLA MD 46OZ (1.36L)</td>
+								<td style="text-align:center" id="tip" title="DBL Cartridge = 2 Slots. 
+								SNGL Cartridge = 1 Slot.">DBL Cartridge</td>
+								<td><input type="text" size="1"></td>
+							</tr>
+							<tr>
+								
+								<td style="text-align:left" title="COCA-COLA MD 46OZ (1.36L)"><img src="img/brand_images/small/Sprite_Cherry.jpg" style="vertical-align:middle"> COCA-COLA MD 46OZ (1.36L)</td>
+								<td style="text-align:center" id="tip" title="DBL Cartridge = 2 Slots. 
+								SNGL Cartridge = 1 Slot.">DBL Cartridge</td>
+								<td><input type="text" size="1"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!-- tableWrapper -->
+
+			</div><!-- leftHalf -->
+
+			<div class="col-xs-3 col-xs-offset-1 rightHalf">
+				<h1 style="float:left">Shopping Cart</h1>
+				<img src="img/shopping_cart.png" class="shoppingCart">
+				<hr style="clear:both">
+				<h2 title="‘Check out’ will go to the next page where you can complete your order.  You can also choose to cancel your order and return to the main order page.">Step 2</h2>
+				<p>Click 'CHECK OUT'.</p>
+				<p class="filled_Open">3 Cases Filled</br>
+					6 Open Slots in Partial Case</p>
+					<hr>
+					<div id="cancelBtn"><a href="#"><img src="img/cancel_dark-grey_btn.jpg"></a></div>
+					<div id="checkOutBtn"><a href="#"><img src="img/check_out_green_btn.jpg"></a></div>
+					
+					<div class="row visualCaseBuilder">
+						<h3 style="clear:both" title="This shows how you whether you have a full or partial case order.  Open slots result in a partial case fee charge upon checkout.  Simply use ‘Update Cart’ after selecting or changing order quantities to quickly identify the number of full cases and determine if partial case open slots exist that will result in an additional fee applied at checkout.">Visual Case Builder</h3>
+
+						<p><img src="img/key_filledSlot.png" class=" caseBuilderKey"> = filled slot &nbsp;&nbsp;<img src="img/key_emptySlot.png" class=" caseBuilderKey"> = open slot</p>
+
+						<img src="img/caseBuilderBG.png" id="caseBuilderBG">
+
+						<table id="caseTable">
+							<tr>
+								<td><img src="img/emptySlot.png"></td>
+								<td><img src="img/emptySlot.png"></td>
+								<td><img src="img/emptySlot.png"></td>
+								<td><img src="img/emptySlot.png"></td>
+								<td><img src="img/emptySlot.png"></td>
+								<td><img src="img/filledSlot.png"></td>
+								<td><img src="img/filledSlot.png"></td>
+								<td><img src="img/filledSlot.png"></td>
+							</tr>
+							<tr>
+								<td><img src="img/filledSlot.png"></td>
+								<td><img src="img/filledSlot.png"></td>
+								<td><img src="img/filledSlot.png"></td>
+								<td><img src="img/filledSlot.png"></td>
+								<td><img src="img/filledSlot.png"></td>
+								<td><img src="img/filledSlot.png"></td>
+								<td><img src="img/filledSlot.png"></td>
+								<td><img src="img/filledSlot.png"></td>
+							</tr>
+						</table>
+					</div><!-- openFill-Content -->
+
+				</div><!-- rightHalf -->
+
+			</div><!-- left-rightContainer -->
+		</div><!-- overall main container -->
+
+		<!-- javascript -->
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/jquery.floatThead.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+
+		<script>
+
+			$(function() {
+				$(document).tooltip();
+
+				$('table').floatThead({
+					useAbsolutePositioning: true,
+					scrollContainer: function($table){
+						return $table.closest(".wrapper");
+					}
+				});
+
+			});
+		</script>
+
+
+
+	</body>
+	</html>

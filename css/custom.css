@@ -1,0 +1,254 @@
+/*
+COLORS
+Light Grey - #d7d7d7
+Medium Grey - #b7b7b7
+Dark Grey - #494b4f
+Yellow - #ffff00
+Red - #ff0000
+Blue - #0692c1
+*/
+
+/*MAIN CONTAINER*/
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	min-width: 835px;
+	margin: 10px auto 0 20px;
+	padding: 0 5%;
+}
+body {
+	font-family: Arial, Helvetica, sans serif;
+	background: none;
+}
+p {
+	font-size: 1em;
+	color: #000;
+}
+h1 {
+	font-size: 18px;
+	font-weight: bold;
+}
+h2 {
+	font-size: 16px;
+	font-weight: bold;
+  	color: #ff0000;
+}
+h3  {
+	color: #494b4f;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.panel-title>a {
+  /*font-family: "Arial Black";*/
+  color: #ff0000;
+  font-weight: bold;
+  /*text-shadow: 1px 1.732px 2px rgb( 0, 0, 0 );*/
+}
+
+/*LEFT SIDE*/
+.leftHalf {
+	max-width: 722px;
+}
+
+/*STEP CONTAINERS*/
+
+.step1 p {
+	clear: both;
+	float: left;
+}
+.step2 p {
+	clear: both;
+	float: left;
+}
+#every {
+	margin-left: 110px;
+}
+#dropdownsContainer {
+	float: left;
+	margin-left: 10px;
+	padding-bottom: 10px;
+}
+.step3 ol {
+	clear: both;
+	margin-left: 0px;
+	padding-left: 22px;
+}
+.calculate-update_btns {
+	margin-top: 18px;
+	clear: both;
+	padding-top: 7px;
+}
+ol {
+	list-style-type:lower-alpha;
+}
+#calculateBtn a {
+	float: right;
+}
+#updateCartBtn a {
+  	float: right;
+  	padding-left: 10px;
+  	margin-top: -34px;
+}
+#tableKey {
+	clear: both;
+	margin-top: 50px;
+	font-size: .85em;
+	color: #494b4f;
+	text-align: right;
+}
+#tableKeyCatalog {
+	display: none;
+	clear: both;
+	margin-top: 10px;
+	font-size: .85em;
+	color: #494b4f;
+	text-align: right;
+}
+.Highlight_key {
+	display: inline-block;
+	background-color: rgb( 255, 255, 0 );
+	border: 1px solid #bdbdbd;
+	width: 32px;
+	height: 11px;
+	margin-right: 5px;
+}
+
+/*TABS VERSION*/
+
+#myTabs li a {
+	font-size: 16px;
+	font-weight: bold;
+  	color: #ff0000;
+}
+#myTabs li a:hover {
+	color: #000;	
+}
+.tab-content {
+	padding-top: 17px;
+}
+
+
+/*TABLE*/
+
+.arrowContainer {
+	display: inline;
+}
+.arrowContainer>img {
+	width: 15px;
+	margin-left: 5px;
+}
+
+table.floatThead-table {
+    border-top: none;
+    border-bottom: none;
+    background-color: #fff;
+}
+
+.wrapper {
+	height: 320px;
+	overflow: auto;
+	overflow-x: hidden;
+	margin-top: 5px;
+}
+thead {
+	font-size: .9em;
+}
+th.brandCol {
+	width: 60px;
+}
+th {
+	font-size: .9em;
+}
+td {
+	font-size: .8em;
+	text-align: center;
+}
+tfoot {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.tableWrapper {
+	height: 410px;
+}
+
+/*RIGHT SIDE*/
+
+.rightHalf {
+	background-color: #D8D8D8;
+}
+hr {
+	border-top: 1px solid #b7b7b7;
+}
+.shoppingCart {
+	float: left;
+	margin: 13px 0 0 15px;
+}
+.filled_Open{
+  background-color: #bdbdbd;
+  padding: 7px;
+}
+
+/*CHECK OUT & CANCEL BUTTONS*/
+
+#checkOutBtn a {
+  	float: right;
+}
+#cancelBtn a {
+  	float: right;
+  	padding-left: 10px;
+}
+
+/*VISUAL CASE BUILDER*/
+
+#caseBuilderKey {
+	vertical-align: baseline;
+}
+.visualCaseBuilder>h3 {
+	padding: 30px 0 10px 0;
+	margin-left: 18px;
+}
+#caseBuilderBG {
+	display: block;
+	width: 90%;
+	height: 130px;
+	margin: -30px auto 0 auto;
+}
+#openFill-Content {
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+.visualCaseBuilder>p {
+	position: relative;
+	font-size: .85em;
+	margin: 5px 0  0 25px;
+	z-index: 1000;
+}
+#caseTable {
+	position: relative;
+	margin: -90px auto 30px auto;
+	min-width: 224px;
+	border: 1px solid #bdbdbd;
+	border-radius: 5px;
+}
+#caseTable tr, #caseTable td {
+	padding: 1px;
+}
+
+/*VISUAL CASE BUILDER KEY ICONS*/
+
+.caseBuilderKey {
+	margin-top: -9px;
+}
+
+
+
+
+
+ /*BORDER TO SEE PLACEMENT*/
+
+.tableWrapper {
+  	border: 0px solid green;
+ }

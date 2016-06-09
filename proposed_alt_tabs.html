@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+	<title>Proposed Alt Tabs2</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script src="js/respond.min.js"></script>
+	<script src="js/underscore-min.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	<link href="css/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+	<![endif]-->
+
+	</head>
+
+	<body>
+		<div class="container">
+			
+			<div class="row left-rightContainer">
+				<div class="col-xs-8 leftHalf">
+					<div class="row mainHeader">
+						<h1>Proposed Order</h1>
+					</div><!-- mainHeader -->
+<p><a href="#">Print inventory check list</a></p>
+<!-- TABS -->
+
+<ul id="myTabs" class="nav nav-tabs">
+	<li class="active"><a href="#Step1" data-toggle="tab" title="The values that initially appear in this step reflect those provided when establishing your account.  You can adjust these values as needed if you order more/less frequently or you require more or less days of inventory to be available in stock.">Design Order</a></li>
+	<li><a href="#Step2" data-toggle="tab" title="Please use the inventory checklist to capture current inventory levels.  Use the completed checklist to input current inventory values required below.">Enter Inventory</a></li>
+	<li><a href="#Step3" data-toggle="tab" title="Selecting ‘calculate’ will tell you what to order based on what customers are consuming.  This proposed order quantity is the amount forecasted that you will need minus what you already have in stock.    You can change order quantities after calculation or you can recalculate using new order frequency, safety stock, or current stock values.">Calculate Order</a></li>
+</ul>
+
+<div class="tab-content">
+	<div class="step1 tab-pane fade in active" id="Step1">
+			<p>How often do you order?<span id="every">Every</span><br>Days of stock you would like to carry?</p>
+				<div  id="dropdownsContainer">
+					<select id="orderDays" name="orderDays">
+						<option value="7Days">7 Days</option>
+						<option value="14Days">14 Days</option>
+					</select><br>
+					<select class="bottomDropdown">
+						<option value="7Days">7 Days</option>
+						<option value="14Days">14 Days</option>
+						</select>
+				</div>
+	</div><!-- step1 -->
+
+	<div class="step2 tab-pane fade" id="Step2">
+			<p><a href="#">Print inventory check list</a> and enter current inventory.</p>
+	</div>			
+
+	<div class="step3 tab-pane fade" id="Step3">
+			<ol>
+				<li>Click ‘CALCULATE’.</li>
+				<li>Revise proposed quantities as needed.</li>
+				<li>Click ‘UPDATE CART’ to view new quantities in ‘Visual Case Builder’.</li>
+			</ol>
+	</div>
+</div><!-- tab content -->
+
+				<!--TABLE SECTION-->
+
+				<div class="row calculate-update_btns">
+					<div id="updateCartBtn"><a href="#"><img src="img/update_cart_light-grey_btn.jpg"></a></div>
+					<div id="calculateBtn"><a href="#"><img src="img/calculate_light-grey_btn.jpg"></a></div>
+
+					<p id="tableKey"><span class="Highlight_key"></span>= Quantities auto-increased to make full case.</p>
+				</div>
+				
+				<div class="wrapper">
+					<table class="table table-bordered table-condensed">
+						<thead>
+							<tr>
+								<th scope="col" >ITEM</th>
+								<th scope="col" style="text-align:left">PRODUCT</th>
+								<th scope="col" width="85">TYPE</th>
+								<th scope="col" width="65">CURRENT<br>STOCK</th>
+								<th scope="col" width="65">FORECASTED<br>QUANTITY</th>
+								<th scope="col" width="65">PROPOSED<br>QUANTITY</th>
+							</tr>
+						</thead>
+
+						<!-- TABLE FOOTER -->
+
+						<tfoot>
+							<tr>
+								<td></td>
+								<td style="text-align:left">TOTALS</td>
+								<td></td>
+								<td><input type="text" size="1"></td>
+								<td><input type="text" size="1"></td>
+								<td><input type="text" size="1"></td>
+							</tr>
+						</tfoot>
+
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td style="text-align:left" title="COCA-COLA MD 46OZ (1.36L)"><img src="img/brand_images/small/Sprite_Cherry.jpg" style="vertical-align:middle"> COCA-COLA MD 46OZ (1.36L)</td>
+								<td style="text-align:center" id="tip" title="DBL Cartridge = 2 Slots. 
+								SNGL Cartridge = 1 Slot.">DBL Cartridge</td>
+								<td><input type="text" size="1"></td>
+								<td><input type="text" size="1"></td>
+								<td><input type="text" size="1"></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td style="text-align:left" title="COCA-COLA MD 46OZ (1.36L)"><img src="img/brand_images/small/Sprite_Cherry.jpg" style="vertical-align:middle"> COCA-COLA MD 46OZ (1.36L)</td>
+								<td style="text-align:center" id="tip" title="DBL Cartridge = 2 Slots. 
+								SNGL Cartridge = 1 Slot.">DBL Cartridge</td>
+								<td><input type="text" size="1"></td>
+								<td><input type="text" size="1"></td>
+								<td><input type="text" size="1"></td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td style="text-align:left" title="COCA-COLA MD 46OZ (1.36L)"><img src="img/brand_images/small/Sprite_Cherry.jpg" style="vertical-align:middle"> COCA-COLA MD 46OZ (1.36L)</td>
+								<td style="text-align:center" id="tip" title="DBL Cartridge = 2 Slots. 
+								SNGL Cartridge = 1 Slot.">DBL Cartridge</td>
+								<td><input type="text" size="1"></td>
+								<td><input type="text" size="1"></td>
+								<td><input type="text" size="1"></td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td style="text-align:left" title="COCA-COLA MD 46OZ (1.36L)"><img src="img/brand_images/small/Sprite_Cherry.jpg" style="vertical-align:middle"> COCA-COLA MD 46OZ (1.36L)</td>
+								<td style="text-align:center" id="tip" title="DBL Cartridge = 2 Slots. 
+								SNGL Cartridge = 1 Slot.">DBL Cartridge</td>
+								<td><input type="text" size="1"></td>
+								<td><input type="text" size="1"></td>
+								<td><input type="text" size="1"></td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td style="text-align:left" title="COCA-COLA MD 46OZ (1.36L)"><img src="img/brand_images/small/Sprite_Cherry.jpg" style="vertical-align:middle"> COCA-COLA MD 46OZ (1.36L)</td>
+								<td style="text-align:center" id="tip" title="DBL Cartridge = 2 Slots. 
+								SNGL Cartridge = 1 Slot.">DBL Cartridge</td>
+								<td><input type="text" size="1"></td>
+								<td><input type="text" size="1"></td>
+								<td><input type="text" size="1"></td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td style="text-align:left" title="COCA-COLA MD 46OZ (1.36L)"><img src="img/brand_images/small/Sprite_Cherry.jpg" style="vertical-align:middle"> COCA-COLA MD 46OZ (1.36L)</td>
+								<td style="text-align:center" id="tip" title="DBL Cartridge = 2 Slots. 
+								SNGL Cartridge = 1 Slot.">DBL Cartridge</td>
+								<td><input type="text" size="1"></td>
+								<td><input type="text" size="1"></td>
+								<td><input type="text" size="1"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!-- tableWrapper -->
+
+			</div><!-- leftHalf -->
+
+			<div class="col-xs-3 col-xs-offset-1 rightHalf">
+				<h1 style="float:left">Shopping Cart</h1>
+				<img src="img/shopping_cart.png" class="shoppingCart">
+				<hr style="clear:both">
+				<h2 title="‘Check out’ will go to the next page where you can complete your order.  You can also choose to cancel your order and return to the main order page.">Click 'CHECK OUT'</h2>
+				<!-- <p>Click 'CHECK OUT'.</p> -->
+				<p class="filled_Open">3 Cases Filled</br>
+					6 Open Slots in Partial Case</p>
+					<hr>
+					<div id="cancelBtn"><a href="#"><img src="img/cancel_dark-grey_btn.jpg"></a></div>
+					<div id="checkOutBtn"><a href="#"><img src="img/check_out_green_btn.jpg"></a></div>
+					
+					<div class="row visualCaseBuilder">
+						<h3 style="clear:both" title="This shows how you whether you have a full or partial case order.  Open slots result in a partial case fee charge upon checkout.  Simply use ‘Update Cart’ after selecting or changing order quantities to quickly identify the number of full cases and determine if partial case open slots exist that will result in an additional fee applied at checkout.">Visual Case Builder</h3>
+
+						<p><img src="img/key_filledSlot.png" class=" caseBuilderKey"> = filled slot &nbsp;&nbsp;<img src="img/key_emptySlot.png" class=" caseBuilderKey"> = open slot</p>
+
+						<img src="img/caseBuilderBG.png" id="caseBuilderBG">
+
+						<table id="caseTable">
+							<tr>
+								<td><img src="img/emptySlot.png"></td>
+								<td><img src="img/emptySlot.png"></td>
+								<td><img src="img/emptySlot.png"></td>
+								<td><img src="img/emptySlot.png"></td>
+								<td><img src="img/emptySlot.png"></td>
+								<td><img src="img/filledSlot.png"></td>
+								<td><img src="img/filledSlot.png"></td>
+								<td><img src="img/filledSlot.png"></td>
+							</tr>
+							<tr>
+								<td><img src="img/filledSlot.png"></td>
+								<td><img src="img/filledSlot.png"></td>
+								<td><img src="img/filledSlot.png"></td>
+								<td><img src="img/filledSlot.png"></td>
+								<td><img src="img/filledSlot.png"></td>
+								<td><img src="img/filledSlot.png"></td>
+								<td><img src="img/filledSlot.png"></td>
+								<td><img src="img/filledSlot.png"></td>
+							</tr>
+						</table>
+					</div><!-- openFill-Content -->
+
+				</div><!-- rightHalf -->
+
+			</div><!-- left-rightContainer -->
+		</div><!-- overall main container -->
+
+		<!-- javascript -->
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/jquery.floatThead.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+
+		<script>
+
+			$(function() {
+				$(document).tooltip();
+
+				$('table').floatThead({
+					useAbsolutePositioning: true,
+					scrollContainer: function($table){
+						return $table.closest(".wrapper");
+					}
+				});
+
+			});
+		</script>
+
+
+
+	</body>
+	</html>
